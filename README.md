@@ -4,6 +4,8 @@ The purpose of this script is to collect the data required by a MongoDB Solution
 
 This script has also been tested against Amazon DocumentDB 5.0.0.
 
+The script connects to the target cluster, iterates through non-system databases and collections, and captures sizing-focused metadata such as database-level totals (`dataSize`, `storageSize`, `indexSize`, `totalSize`), collection-level stats (including index sizes and index usage stats where available), and overall cluster totals (number of databases, collections, and indexes). It outputs all results as JSON so it can be shared directly with a MongoDB Solutions Architect for capacity and sizing analysis.
+
 ## Prerequisites
 
 - Download and install Mongo Shell.
