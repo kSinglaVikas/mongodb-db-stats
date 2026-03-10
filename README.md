@@ -25,7 +25,7 @@ db.getSiblingDB("admin").createUser({
 Execute the command:
 
 ```bash
-mongosh "<CONNECTION_STRING>" getDatabaseStats.js --norc --quiet > output.json
+mongosh "<CONNECTION_STRING>" getDatabaseStats.js --norc --quiet > cluster_name.json
 ```
 
 Send the output file to the MongoDB Solutions Architect for analysis.
